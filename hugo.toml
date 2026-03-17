@@ -1,0 +1,6 @@
+baseURL = 'https://carlmig.github.io/news-summarizer/'
+locale = 'pt-PT'
+title = 'News Summarizer'
+relativeURLs = true
+canonifyURLs = true
+theme = "beautiful"
