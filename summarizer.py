@@ -64,7 +64,7 @@ def export_hugo(content):
     frontmatter = template.format_map(
         {
             "date_simple": datetime.now().strftime("%Y-%m-%d"),
-            "date_full": datetime.now(timezone.UTC).isoformat()
+            "date_full": datetime.now(timezone.utc).isoformat()
         }
     )
 
