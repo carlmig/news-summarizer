@@ -1,6 +1,6 @@
 import requests
 import feedparser
-from datetime import datetime
+from datetime import datetime, timezone
 import os
 from groq import Groq
 from dotenv import load_dotenv
@@ -64,7 +64,7 @@ def export_hugo(content):
     frontmatter = template.format_map(
         {
             "date_simple": datetime.now().strftime("%Y-%m-%d"),
-            "date_full": datetime.now(datetime.UTC).isoformat()
+            "date_full": datetime.now(timezone.UTC).isoformat()
         }
     )
 
