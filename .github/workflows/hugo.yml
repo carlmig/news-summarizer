@@ -28,7 +28,6 @@ jobs:
   # Generate
   generate:
     runs-on: ubuntu-latest
-    env:
       
     steps:
       # 1. Checkout code
