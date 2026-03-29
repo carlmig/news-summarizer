@@ -68,7 +68,7 @@ def export_hugo(content):
         }
     )
 
-    filename = f"{datetime.now().strftime("%Y-%m-%d")}.md"
+    filename = f"{datetime.now().strftime('%Y-%m-%d')}.md"
     filepath = os.path.join(output_dir, filename)
 
     # save file
@@ -110,7 +110,7 @@ def call_llm(prompt):
 
 def execute():
     load_dotenv()
-    
+
     url = "https://sapo.pt/rss/destaques"
     feed = read_rss(url)
 
