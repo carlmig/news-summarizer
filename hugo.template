@@ -1,0 +1,10 @@
++++
+title = "Resumo de Notícias — {date_simple}"
+date = "{date_full}"
+draft = false
+tags = ["notícias", "resumo"]
+categories = ["daily-summary"]
++++
+
+> Resumo rápido das principais notícias do dia.
+
