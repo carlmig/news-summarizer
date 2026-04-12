@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 raw_prompt = """
     You are a curator for news and will select the news to show to the user, based on its interests. You will be given a list of INTERESTS and a list of NEWS and will provide a response 
-    with the selected news following a specific TEMPLATE.
+    with the selected news following a specific TEMPLATE. Whitespace matter.
     If news don't fit the interests, then ignore it. If there are interests without news, ignore it.
     
     The INTERESTS are: {interests}.
