@@ -64,7 +64,7 @@ def export_hugo(content):
     frontmatter = template.format_map(
         {
             "date_simple": datetime.now().strftime("%Y-%m-%d"),
-            "date_full": (datetime.now(timezone.utc).replace(microsecond=0)- timedelta(minutes=60)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            "date_full": (datetime.now(timezone.utc).replace(microsecond=0)- timedelta(minutes=120)).strftime("%Y-%m-%dT%H:%M:%SZ")
         }
     )
 
