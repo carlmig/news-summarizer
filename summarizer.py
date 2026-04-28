@@ -61,10 +61,15 @@ def export_hugo(content):
     with open("hugo.template", "r", encoding="utf-8") as r:
         template = r.read()
 
+    date_simple = datetime.now().strftime("%Y-%m-%d")
+    date_full = (datetime.now(timezone.utc).replace(microsecond=0)- timedelta(minutes=120)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    print("simple: " + date_simple + "\nfull: " + date_full)
+
     frontmatter = template.format_map(
         {
-            "date_simple": datetime.now().strftime("%Y-%m-%d"),
-            "date_full": (datetime.now(timezone.utc).replace(microsecond=0)- timedelta(minutes=120)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            "date_simple": date_simple,
+            "date_full": date_full
         }
     )
 
